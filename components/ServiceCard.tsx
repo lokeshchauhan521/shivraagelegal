@@ -1,0 +1,8 @@
+export default function ServiceCard({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="service-item">
+      <h3>{title}</h3>
+      <p>{text}</p>
+    </div>
+  )
+}

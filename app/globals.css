@@ -45,7 +45,7 @@ a { color: inherit; text-decoration: none; transition: all 0.3s ease; }
 
 /* ==================== HEADER ==================== */
 .header { 
-  background: #1a2940;
+  background: #00357A;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   padding: 0.5rem 0;
   position: sticky;
@@ -556,7 +556,7 @@ nav a:hover::after {
 
 /* ==================== FOOTER ==================== */
 .footer {
-  background: #0f172a;
+  background:#00357A;
   color: white;
   padding: 3rem 0;
   border-top: 1px solid #1e40af;

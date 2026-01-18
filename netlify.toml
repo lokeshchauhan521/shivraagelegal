@@ -1,3 +1,4 @@
+The file ******/netlify.toml has been updated. Here's the result of running `cat -n` on a snippet of the edited file:
 [build]
-command = "npm run export"
+command = "npm run build"
 publish = "out"

@@ -18,6 +18,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #1a2940;
 }
 
+.header .brand-name {
+  color: #c4933b; 
+}
+
+.header .brand-legal {
+  color: #ffffff; 
+}
+
+
 /* .brand-name {
   color: #c4933b;
 }
@@ -81,14 +90,6 @@ a { color: inherit; text-decoration: none; transition: all 0.3s ease; }
   letter-spacing: 1px;
 }
 
-.brand-name {
-  color: #c4933b;
-}
-
-.brand-legal {
-  color: #ffffff;
-}
-
 .logo .tagline {
   font-size: 0.65rem;
   color: #c4933b;
@@ -147,9 +148,7 @@ nav a:hover::after {
   transition: all 0.3s ease;
 }
 
-/* ==================== HERO SECTION ==================== */
 .hero {
-  color: white;
   padding: 140px 20px;
   text-align: center;
   position: relative;
@@ -213,6 +212,9 @@ nav a:hover::after {
   max-width: 900px;
   z-index: 2;
   position: relative;
+  text-align: center;
+  padding: 2rem;
+  color: #ffffff;
 }
 
 .hero h1 {
@@ -221,6 +223,16 @@ nav a:hover::after {
   margin-bottom: 0.5rem;
   line-height: 1.1;
 }
+
+.hero h1 .brand-name {
+  color: #c4933b; 
+}
+
+.hero h1 .brand-legal {
+  color: #ffffff;
+}
+
+
 
 .hero-subtitle {
   font-size: 1.4rem;
@@ -252,6 +264,12 @@ nav a:hover::after {
   font-family: 'Cinzel', serif;
 }
 
+.section .brand-name,
+.section .brand-legal {
+  color: inherit;
+}
+
+
 .section-intro {
   font-size: 1.1rem;
   color: #555;
@@ -274,19 +292,19 @@ nav a:hover::after {
   margin-top: 3rem;
 }
 
-.about-text, .about-vision {
+/* .about-text, .about-vision {
   background: white;
   padding: 2.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-}
+} */
 
-.about-text h3, .about-vision h3 {
+/* .about-text h3, .about-vision h3 {
   font-size: 1.5rem;
   color: #0f172a;
   margin-bottom: 1rem;
   font-weight: 600;
-}
+} */
 
 .about-text p, .about-vision p {
   color: #555;
@@ -907,6 +925,15 @@ nav a:hover::after {
   margin: 0;
 }
 
+/* .hero h1 .brand-name {
+  color: #c4933b; 
+}
+
+.hero h1 .brand-legal {
+  color: #ffffff;
+} */
+
+
 @media (max-width: 768px) {
   .values-grid {
     grid-template-columns: 1fr;
@@ -1236,3 +1263,4 @@ nav a:hover::after {
     gap: 3rem;
   }
 }
+

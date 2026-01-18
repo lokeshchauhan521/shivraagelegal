@@ -10,7 +10,10 @@ export default function About() {
         }}
       >
         <div className="hero-content">
-          <h1>About Shivraage Legal</h1>
+          <h1>
+            <span className="brand-name">About Shivraagesss</span>{' '}
+            <span className="brand-legal">Legal</span>
+          </h1>
           <p className="hero-subtitle">Your Trusted Partner in Legal Excellence</p>
         </div>
       </section>

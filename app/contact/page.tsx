@@ -114,14 +114,14 @@ export default function Contact() {
 
               <div className="info-block">
                 <label>Phone</label>
-                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p><a href="tel:+917409516431">+91 98765 43210</a></p>
               </div>
 
               <div className="info-block">
                 <label>WhatsApp</label>
                 <p>
                   <a 
-                    href="https://wa.me/919876543210?text=Hello%20Shivraage%20Legal,%20I%20need%20legal%20consultation%20and%20compliance%20services." 
+                    href="https://wa.me/917409516431?text=Hello%20Shivraage%20Legal,%20I%20need%20legal%20consultation%20and%20compliance%20services." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="whatsapp-link"

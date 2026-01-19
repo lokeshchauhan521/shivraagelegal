@@ -21,33 +21,54 @@ export default function POSH() {
           <p className="section-intro">
             The Prevention of Sexual Harassment (POSH) of Women at Workplace Act, 2013 is critical legislation that mandates organizations to create and maintain safe, harassment-free workplaces.
           </p>
-
           <div className="service-grid">
-            <div className="service-item">
-              <div 
-                className="service-image"
-                style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80)' }}
-              ></div>
-              <h3>Policy Development</h3>
-              <p>We create comprehensive POSH policies tailored to your organization's unique needs and requirements, ensuring full compliance with legal standards.</p>
-            </div>
-            <div className="service-item">
-              <div 
-                className="service-image"
-                style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80)' }}
-              ></div>
-              <h3>Implementation Support</h3>
-              <p>From Internal Committee formation to documentation systems, we guide your organization through every step of POSH implementation.</p>
-            </div>
-            <div className="service-item">
-              <div 
-                className="service-image"
-                style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80)' }}
-              ></div>
-              <h3>Ongoing Compliance</h3>
-              <p>Regular audits, training updates, and compliance reviews ensure your organization maintains adherence to all POSH requirements.</p>
-            </div>
+          <div className="service-item">
+            <div
+              className="service-image"
+              style={{
+                backgroundImage:
+                  "url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80')",
+              }}
+            ></div>
+            <h3>Policy Development</h3>
+            <p>
+              We create comprehensive POSH policies tailored to your organization's
+              unique needs and requirements, ensuring full compliance with legal
+              standards.
+            </p>
           </div>
+
+          <div className="service-item">
+            <div
+              className="service-image"
+              style={{
+                backgroundImage:
+                  "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80')",
+              }}
+            ></div>
+            <h3>Implementation Support</h3>
+            <p>
+              From Internal Committee formation to documentation systems, we guide your
+              organization through every step of POSH implementation.
+            </p>
+          </div>
+
+          <div className="service-item">
+            <div
+              className="service-image"
+              style={{
+                backgroundImage:
+                  "url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80')",
+              }}
+            ></div>
+            <h3>Ongoing Compliance</h3>
+            <p>
+              Regular audits, training updates, and compliance reviews ensure your
+              organization maintains adherence to all POSH requirements.
+            </p>
+          </div>
+        </div>
+
         </div>
       </section>
 

@@ -183,7 +183,7 @@ export default function Home() {
           <div className="team-grid">
             <div className="team-card">
               <div className="team-member-image">
-                <div className="placeholder-avatar">👩‍⚖️</div>
+                <div className="placeholder-avatar"></div>
               </div>
               <h3>Adv. Shivani Rathore</h3>
               <p className="team-role">Founder | Legal Advisory & Compliance</p>
@@ -200,7 +200,7 @@ export default function Home() {
 
             <div className="team-card">
               <div className="team-member-image">
-                <div className="placeholder-avatar">👨‍⚖️</div>
+                <div className="placeholder-avatar"></div>
               </div>
               <h3>Adv. Neeraj Joshi</h3>
               <p className="team-role">Criminal Advisory & Litigation</p>
@@ -215,7 +215,7 @@ export default function Home() {
 
             <div className="team-card">
               <div className="team-member-image">
-                <div className="placeholder-avatar">👨‍💼</div>
+                <div className="placeholder-avatar"></div>
               </div>
               <h3>Adv. Anurag Bhardwaj</h3>
               <p className="team-role">Strategic & Business Advisory</p>

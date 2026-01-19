@@ -3,32 +3,32 @@ export default function Services() {
     {
       title: "Corporate & Commercial Law",
       desc: "Expert guidance on corporate formations, mergers, acquisitions, commercial contracts, and business transactions to ensure growth and compliance.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" // contracts & documents
     },
     {
       title: "POSH Compliance",
       desc: "Comprehensive Prevention of Sexual Harassment policy development, implementation, and compliance management for workplace safety.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1590650046871-92c887180603?w=800&q=80" // workplace policy & safety
     },
     {
       title: "Internal Committee Support",
       desc: "Formation, training, and ongoing support for Internal Committees to handle complaints and investigations effectively.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80" // professional discussion
     },
     {
       title: "Employee Training Programs",
       desc: "Tailored awareness and compliance training to ensure all employees understand their rights and responsibilities.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80" // training & presentation
     },
     {
       title: "Compliance Audit",
       desc: "Thorough audit of your compliance framework with detailed recommendations for improvements and risk mitigation.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" // audit & review
     },
     {
       title: "Legal Advisory",
       desc: "Strategic legal counsel on regulatory matters, employment law, IP protection, and all business-critical legal issues.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80" // legal advisory / law
     }
   ];
 
@@ -37,14 +37,17 @@ export default function Services() {
       <section 
         className="hero"
         style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 64, 175, 0.8) 100%), url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundImage:
+            "linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 64, 175, 0.8) 100%), url(https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200&q=80)",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
         }}
       >
         <div className="hero-content">
           <h1>Our Services</h1>
-          <p className="hero-subtitle">Comprehensive Legal Solutions for Modern Businesses</p>
+          <p className="hero-subtitle">
+            Comprehensive Legal Solutions for Modern Businesses
+          </p>
         </div>
       </section>
 
@@ -54,10 +57,11 @@ export default function Services() {
           <p className="section-intro">
             We offer a comprehensive range of legal services designed to meet the unique needs of your organization
           </p>
+
           <div className="service-grid">
             {services.map((service, i) => (
               <div key={i} className="service-item">
-                <div 
+                <div
                   className="service-image"
                   style={{ backgroundImage: `url(${service.image})` }}
                 ></div>
@@ -69,7 +73,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="section" style={{ background: '#f8f9fa' }}>
+      <section className="section" style={{ background: "#f8f9fa" }}>
         <div className="container">
           <h2>Why Choose Shivraage Legal?</h2>
           <div className="benefits-grid">
@@ -101,5 +105,5 @@ export default function Services() {
         </div>
       </section>
     </main>
-  )
+  );
 }

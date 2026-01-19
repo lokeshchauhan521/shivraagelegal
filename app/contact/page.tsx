@@ -121,7 +121,7 @@ export default function Contact() {
                 <label>WhatsApp</label>
                 <p>
                   <a 
-                    href="https://wa.me/91 8375007787?text=Hello%20Shivraage%20Legal,%20I%20need%20legal%20consultation%20and%20compliance%20services." 
+                    href="https://wa.me/918375007787?text=Hello%20Shivraage%20Legal,%20I%20need%20legal%20consultation%20and%20compliance%20services." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="whatsapp-link"

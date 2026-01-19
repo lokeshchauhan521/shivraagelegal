@@ -7,13 +7,12 @@ import { useState } from 'react'
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const closeMenu = () => {
-    setMenuOpen(false)
-  }
+  const closeMenu = () => setMenuOpen(false)
 
   return (
     <header className="header">
       <div className="container header-inner">
+        {/* Logo - always visible */}
         <Link href="/" className="logo-link" onClick={closeMenu}>
           <Image 
             src="/images/services/company_logo.png" 
@@ -29,8 +28,9 @@ export default function Header() {
           </div>
         </Link>
 
+        {/* Hamburger - visible only on mobile */}
         <button 
-          className="menu-toggle" 
+          className="menu-toggle md:hidden"  // ← hides on md (≥768px) and up
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -39,7 +39,14 @@ export default function Header() {
           <span></span>
         </button>
 
-        <nav className={menuOpen ? 'nav-open' : ''}>
+        {/* Nav - hidden by default, shown as block on mobile when open, flex row on desktop */}
+        <nav 
+          className={`
+            mobile-nav 
+            ${menuOpen ? 'nav-open' : ''} 
+            md:flex md:items-center md:gap-6 md:static md:bg-transparent
+          `}
+        >
           <Link href="/" onClick={closeMenu}>Home</Link>
           <Link href="/#about" onClick={closeMenu}>About</Link>
           <Link href="/services" onClick={closeMenu}>Services</Link>

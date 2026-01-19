@@ -4,6 +4,72 @@
 
 html { scroll-behavior: smooth; }
 
+
+/* POSH Compliance Advisory Section */
+.posh-details-section {
+  background-color: #f9f9f9;
+}
+
+.posh-details-section .container {
+  max-width: 1000px;
+}
+
+/* Intro block */
+.posh-block {
+  margin-bottom: 2.5rem;
+}
+
+.posh-block p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Subsections */
+.posh-subsection {
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.75rem;
+  background-color: #ffffff;
+  border-left: 4px solid #1f2937; /* matches legal/brand tone */
+  border-radius: 6px;
+}
+
+.posh-subsection h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.posh-subsection p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* Disclaimer box */
+.posh-disclaimer {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background-color: #fff5f5;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+}
+
+.posh-disclaimer p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #7f1d1d;
+  margin-bottom: 0.75rem;
+}
+
+.posh-disclaimer p:last-child {
+  margin-bottom: 0;
+}
+
+
+
 body { 
   font-family: 'Lora', 'Georgia', serif;
   color: #2c3e50;
@@ -45,7 +111,7 @@ a { color: inherit; text-decoration: none; transition: all 0.3s ease; }
 
 /* ==================== HEADER ==================== */
 .header { 
-  background: #1a2940;
+  background: #00357A;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   padding: 0.5rem 0;
   position: sticky;
@@ -555,8 +621,34 @@ nav a:hover::after {
 }
 
 /* ==================== FOOTER ==================== */
+.footer-disclaimer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-disclaimer h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+  color: #fbbf24;
+}
+
+.footer-disclaimer p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #e5e7eb;
+}
+
+
 .footer {
-  background: #0f172a;
+  background:#00357A;
   color: white;
   padding: 3rem 0;
   border-top: 1px solid #1e40af;
@@ -706,103 +798,163 @@ nav a:hover::after {
 
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
+    .posh-subsection {
+    padding: 1.25rem;
+  }
+
+  .posh-details-section .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* ───────────────────────────────
+     HEADER & LAYOUT ADJUSTMENTS
+  ─────────────────────────────── */
+  .header {
+    padding: 0.6rem 0;
+  }
+
   .header-inner {
-    flex-direction: row;
-    gap: 1rem;
     justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.35rem;
+  }
+
+  .logo .tagline {
+    display: none;
   }
 
   .menu-toggle {
     display: flex;
-    order: 3;
+    z-index: 1002;          
   }
 
+  /* ───────────────────────────────
+     MOBILE MENU (full screen overlay)
+  ─────────────────────────────── */
   nav {
+    margin-top: 55px;
+    padding-top: calc(70px + env(safe-area-inset-top));
     position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    flex-direction: column;
-    gap: 1rem;
-    background: white;
-    padding: 2rem;
-    display: none;
+    inset: 0;                          
     z-index: 999;
-    border-top: 1px solid #e5e7eb;
+    display: none;                      
+    flex-direction: column;
+    background: #1a2940;
+    color: white;
     overflow-y: auto;
+    padding: 5.5rem 1.5rem 3rem;        
   }
 
   nav.nav-open {
-    display: flex;
+    display: flex !important;
   }
 
+  /* Gold line right under header */
+  nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #c4933b;
+    z-index: 1;
+  }
+
+  nav.nav-open {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;              
+}
+
   nav a {
-    padding: 1rem 0;
-    border-bottom: 1px solid #f0f0f0;
-    font-size: 1.1rem;
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    /* padding: .25rem 0rem; */
+    margin: .007rem 0;
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    transition: all 0.25s ease;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background: rgba(196, 147, 59, 0.22);
+    color: #c4933b;
+    transform: translateY(-2px);
   }
 
   nav a::after {
-    display: none;
+    display: none;          /* no desktop-style underline */
   }
 
-  nav a:hover {
-    color: #b45309;
+  /* Support for phones with notch / dynamic island */
+  nav {
+    padding-top: calc(5.5rem + env(safe-area-inset-top));
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
-  .logo h1 {
-    font-size: 1.3rem;
-  }
-
-  .logo .tagline {
-    display: none;
-  }
-
+  /* ───────────────────────────────
+     OTHER PAGE ELEMENTS
+  ─────────────────────────────── */
   .hero {
-    padding: 80px 20px;
-    min-height: 400px;
+    padding: 110px 1.5rem 4rem;     /* extra top space for sticky header */
+    min-height: 55vh;
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .section h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
-  .about-content {
+  /* Single-column layouts */
+  .about-content,
+  .service-grid,
+  .testimonials-grid,
+  .contact-wrapper,
+  .form-row,
+  .footer-content,
+  .values-grid,
+  .benefits-grid,
+  .training-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
+  /* Reduce some spacing on very small screens if needed */
+  @media (max-width: 480px) {
+    nav a {
+      font-size: 1.25rem;
+      padding: 1.1rem 1.5rem;
+    }
 
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
+    .hero {
+      padding-top: 95px;
+    }
 
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-  }
-
-  .logo .tagline {
-    display: none;
+    .hero h1 {
+      font-size: 2.2rem;
+    }
   }
 }
 

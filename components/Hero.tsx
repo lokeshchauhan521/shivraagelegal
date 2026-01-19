@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="hero-background">
         <div className="hero-shape hero-shape-1"></div>
         <div className="hero-shape hero-shape-2"></div>
-        <div className="hero-shape hero-shape-3"></div>
+        <div className="hero-shape hero-shape-3"></div> 
       </div>
 
       <div className="hero-content">
@@ -14,11 +14,11 @@ export default function Hero() {
         </h1>
 
         <p className="hero-subtitle">
-          Your Trusted Partner in Legal Excellence & Compliance
+          Legal Advisory & Compliance-Oriented Practice
         </p>
 
         <p className="hero-description">
-          Specializing in corporate law, compliance solutions, and POSH (Prevention of Sexual Harassment) advisory for modern businesses.
+          Providing legal advisory and compliance support for businesses, professionals, and individuals.
         </p>
 
         <a href="#contact" className="btn btn-primary">Get Consultation</a>

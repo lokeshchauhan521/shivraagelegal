@@ -14,54 +14,54 @@ export default function Team() {
           <p className="hero-subtitle">Highly Qualified Legal Professionals</p>
         </div>
       </section>
-
-      <section className="section team-section">
+         <section className="section team-section">
         <div className="container">
-          <h2>Meet Our Team</h2>
-          <p className="section-intro">
-            Our team consists of experienced legal professionals dedicated to providing exceptional service and guidance to our clients.
-          </p>
           <div className="team-grid">
             <div className="team-card">
               <div className="team-member-image">
-                <div className="placeholder-avatar">👨‍⚖️</div>
+                <div className="placeholder-avatar"></div>
               </div>
-              <h3>Mr. Rajesh Kumar</h3>
-              <p className="team-role">Founder & Senior Legal Advisor</p>
+              <h3>Adv. Shivani Rathore</h3>
+              <p className="team-role">Founder | Legal Advisory & Compliance</p>
               <p className="team-bio">
-                With 15+ years of experience in corporate law and compliance management, Rajesh brings deep expertise in POSH implementation and regulatory affairs. He has guided numerous mid-sized to large enterprises through complex legal and compliance challenges. His strategic approach ensures businesses stay compliant while focusing on growth.
+                Adv. Shivani Rathore is the founder of Shivraage Legal and is engaged in
+                corporate advisory, statutory compliance, POSH compliance advisory, and
+                documentation-focused legal support. She follows a technology-aware
+                approach to legal practice and has experience in cyber law–related
+                review, cybersecurity documentation, and advisory coordination for
+                corporate clients, including those based outside India, within the
+                permissible scope of professional practice.
               </p>
-              <div className="team-expertise">
-                <strong>Expertise:</strong> Corporate Law, POSH Compliance, Legal Strategy
-              </div>
             </div>
-            
+
             <div className="team-card">
               <div className="team-member-image">
-                <div className="placeholder-avatar">👩‍⚖️</div>
+                <div className="placeholder-avatar"></div>
               </div>
-              <h3>Ms. Priya Sharma</h3>
-              <p className="team-role">POSH Compliance Specialist</p>
+              <h3>Adv. Neeraj Joshi</h3>
+              <p className="team-role">Criminal Advisory & Litigation</p>
               <p className="team-bio">
-                Priya specializes in creating inclusive and compliant workplaces through comprehensive POSH policy development and training programs. With extensive experience in corporate governance, she works closely with HR teams to implement effective compliance frameworks. Her expertise helps organizations create safe and respectful work environments.
+                Adv. Neeraj Joshi is engaged in criminal advisory and litigation matters
+                with professional experience of over a decade. He is associated with
+                practice before the Delhi High Court and other courts and handles
+                criminal defence, trial-related assistance, and litigation support in
+                accordance with law.
               </p>
-              <div className="team-expertise">
-                <strong>Expertise:</strong> POSH Compliance, Training Programs, Governance
-              </div>
             </div>
-            
+
             <div className="team-card">
               <div className="team-member-image">
-                <div className="placeholder-avatar">👨‍💼</div>
+                <div className="placeholder-avatar"></div>
               </div>
-              <h3>Mr. Arjun Verma</h3>
-              <p className="team-role">Corporate Legal Consultant</p>
+              <h3>Adv. Anurag Bhardwaj</h3>
+              <p className="team-role">Strategic & Business Advisory</p>
               <p className="team-bio">
-                Arjun brings expertise in commercial contracts, employment law, and business advisory. He is passionate about helping startups and established companies navigate complex legal challenges and seize growth opportunities. His practical approach to problem-solving ensures clients receive actionable legal advice.
+                Adv. Anurag Bhardwaj is associated with Shivraage Legal in a strategic and
+                business advisory capacity. He contributes to practice development and
+                strategic planning while ensuring alignment with applicable legal and
+                professional standards and does not undertake routine litigation or
+                client representation.
               </p>
-              <div className="team-expertise">
-                <strong>Expertise:</strong> Commercial Law, Employment Law, Business Advisory
-              </div>
             </div>
           </div>
         </div>

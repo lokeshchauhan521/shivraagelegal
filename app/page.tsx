@@ -185,10 +185,10 @@ export default function Home() {
               <div className="team-member-image">
                 <div className="placeholder-avatar"></div>
               </div>
-              <h3>Adv. Shivani Rathore</h3>
+              <h3>Adv. Shivani Rathour</h3>
               <p className="team-role">Founder | Legal Advisory & Compliance</p>
               <p className="team-bio">
-                Adv. Shivani Rathore is the founder of Shivraage Legal and is engaged in
+                Adv. Shivani Rathour is the founder of Shivraage Legal and is engaged in
                 corporate advisory, statutory compliance, POSH compliance advisory, and
                 documentation-focused legal support. She follows a technology-aware
                 approach to legal practice and has experience in cyber law–related
